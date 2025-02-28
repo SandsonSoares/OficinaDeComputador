@@ -12,6 +12,7 @@
     font-family: var(--fonteprincipal);
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /* #corpo {
     height: 1000vh;
@@ -52,5 +53,98 @@
     
 }
 
+.botoes button{
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    background-color: var(--corprimaria);
+    transition: ease-in-out 300ms;
+}
+.botoes button:hover{
+    cursor: pointer;
+    padding: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: var(--corterciaria);
+}
 
+.pagamento {
+    background-color: var(--corterciaria);
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+#compra button {
+    border: none;
+    padding: 15px;
+    border-top-left-radius: 35px;
+    transition: ease-in-out 350ms;
+
+}
+#compra button:hover{
+    cursor: pointer;
+    background-color: rgb(219, 219, 19);
+    font-weight: 500;
+}
+#compra {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#btncompra {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* CORPO DO SITE */
+
+.compartimentos{
+    margin: 50px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#biografia h1{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+#biografia p{
+    width: 50%;
+    text-align: justify;
+    text-indent: 15px;
+}
+#biografia {
+    margin-bottom: 50px;
+}
+
+/* Configuração para telefone celular */
+@media (max-width: 500px) {
+    .botoes button{
+        width: 60px;
+        font-size: 0.7em;
+    }
+    #compra button{
+        width: 80px;
+        font-size: 0.8em ;
+    }
+    #local{
+        font-size: 0.8em;
+    }
+    #biografia p{
+        width: 80%;
+    }
+    #biografia h1 {
+        font-size: 1.3em;
+    }
+}
 /* {} */
